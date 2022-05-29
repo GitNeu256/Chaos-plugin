@@ -18,6 +18,8 @@ import java.util.*;
 import java.lang.*;
 
 public class main extends Plugin {
+	public int fx, fy, tx, ty;
+
 	@Override
 	public void registerClientCommands(CommandHandler handler) {
 		handler.<Player>register("chaos", "Started chaos", (args, player) -> {
