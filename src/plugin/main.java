@@ -25,7 +25,7 @@ public class main extends Plugin {
 			UnitType flare = Vars.content.units().find(b -> b.name.equals("flare"));
 			if (score < 10){
 				flare.spawn(Team.crux, player.x * 2 - player.x, player.y * 2 - player.y);
-				score++;
+				score = score + 1;
 			}
 			score = 0;
 		});
