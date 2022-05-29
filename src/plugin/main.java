@@ -21,7 +21,7 @@ public class main extends Plugin {
 	public void registerClientCommands(CommandHandler handler) {
 		handler.<Player>register("chaos", "Started chaos", (args, player) -> {
 			UnitType mono = Vars.content.units().find(b -> b.name.equals("mono"));
-			mono.spawn(Team.crux(), player.x * 3 - player.x, player.y * 3 - player.y);
+			mono.spawn(Team.crux, player.x * 3 - player.x, player.y * 3 - player.y);
 
 		});
 	}
