@@ -23,6 +23,6 @@ public class main extends Plugin {
 			UnitType mono = Vars.content.units().find(b -> b.name.equals("mono"));
 			mono.spawn(crux.team(), player.x * 3 - player.x, player.y * 3 - player.y);
 
-		}
-	});
+		});
+	}
 }
