@@ -26,8 +26,10 @@ public class main extends Plugin {
 			UnitType flare = Vars.content.units().find(b -> b.name.equals("flare"));
 			UnitType toxopid = Vars.content.units().find(b -> b.name.equals("toxopid"));
 			for (int i = 0; i < 10; i++) {
-				fx, fy = (int)(Math.random()*Vars.world.width()), (int)(Math.random()*Vars.world.height());
-				tx, ty = (int)(Math.random()*Vars.world.width()), (int)(Math.random()*Vars.world.height());
+				fx = (int)(Math.random()*Vars.world.width());
+				fy = (int)(Math.random()*Vars.world.height());
+				tx = (int)(Math.random()*Vars.world.width());
+				ty = (int)(Math.random()*Vars.world.height());
 				flare.spawn(Team.crux, fx, fy);
 				toxopid.spwan(Team.crux, tx, ty);
 			}
