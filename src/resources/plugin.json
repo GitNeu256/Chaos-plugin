@@ -1,0 +1,11 @@
+{
+  "name": "Chaos Plugin",
+  "displayName": "Chaos plugin",
+  "description": "-",
+  "author": "[I.C.]IC-0npc",
+  "main": "plugin.main",
+  "hidden": false,
+  "java": true,
+  "version": "1.0",
+  "minGameVersion": 129.1
+}
