@@ -17,12 +17,17 @@ import mindustry.entities.*;
 import java.util.*;
 
 public class main extends Plugin {
+	public int score
+
 	@Override
 	public void registerClientCommands(CommandHandler handler) {
 		handler.<Player>register("chaos", "Started chaos", (args, player) -> {
-			UnitType mono = Vars.content.units().find(b -> b.name.equals("mono"));
-			mono.spawn(Team.crux, player.x * 3 - player.x, player.y * 3 - player.y);
-
+			UnitType flare = Vars.content.units().find(b -> b.name.equals("flare"));
+			if (score != 10){
+				flare.spawn(Team.crux, player.x * 3 - player.x, player.y * 3 - player.y);
+				score++;
+			}
+			score = 0;
 		});
 	}
 }
