@@ -31,7 +31,7 @@ public class main extends Plugin {
 				tx = (int)(Math.random()*Vars.world.width());
 				ty = (int)(Math.random()*Vars.world.height());
 				flare.spawn(Team.crux, fx, fy);
-				toxopid.spwan(Team.crux, tx, ty);
+				toxopid.spswn(Team.crux, tx, ty);
 			}
 		});
 	}
