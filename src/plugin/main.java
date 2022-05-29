@@ -18,20 +18,14 @@ import java.util.*;
 import java.lang.*;
 
 public class main extends Plugin {
-	public int fx, fy, tx, ty;
-
 	@Override
 	public void registerClientCommands(CommandHandler handler) {
 		handler.<Player>register("chaos", "Started chaos", (args, player) -> {
 			UnitType flare = Vars.content.units().find(b -> b.name.equals("flare"));
 			UnitType toxopid = Vars.content.units().find(b -> b.name.equals("toxopid"));
 			for (int i = 0; i < 10; i++) {
-				fx = (int)(Math.random()*Vars.world.width());
-				fy = (int)(Math.random()*Vars.world.height());
-				tx = (int)(Math.random()*Vars.world.width());
-				ty = (int)(Math.random()*Vars.world.height());
-				flare.spawn(Team.crux, fx, fy);
-				toxopid.spawn(Team.crux, tx, ty);
+				flare.spawn(Team.crux, (int)(Math.random()*Vars.world.width()*10, (int)(Math.random()*Vars.world.height())*10));
+				toxopid.spawn(Team.crux, (int)(Math.random()*Vars.world.width())*10, (int)(Math.random()*Vars.world.height()*10));
 			}
 		});
 	}
