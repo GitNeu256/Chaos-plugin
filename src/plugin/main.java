@@ -26,8 +26,8 @@ public class main extends Plugin {
 			UnitType flare = Vars.content.units().find(b -> b.name.equals("flare"));
 			UnitType toxopid = Vars.content.units().find(b -> b.name.equals("toxopid"));
 			UnitType antumbra = Vars.content.units().find(b -> b.name.equals("antumbra"));
-			UnitType crawler = Vars.content.units().find(b -> b.name.equals("crawler"))
-			UnitType zenith = Vars.content.units().find(b -> b.name.equals("zenith"))
+			UnitType crawler = Vars.content.units().find(b -> b.name.equals("crawler"));
+			UnitType zenith = Vars.content.units().find(b -> b.name.equals("zenith"));
 
 			for (int i = 0; i < 200; i++) {
 				cx = (int)(Math.random()*Vars.world.width()*10);
@@ -41,7 +41,7 @@ public class main extends Plugin {
 				zx = (int)(Math.random()*Vars.world.width()*10);
 				zy = (int)(Math.random()*Vars.world.height()*10);
 				flare.spawn(Team.crux, zx, zy);
-				zenith.spawn(Team.crux, )
+				zenith.spawn(Team.crux, zx, zy);
 			}
 
 			for (int i = 0; i < 20; i++) {
