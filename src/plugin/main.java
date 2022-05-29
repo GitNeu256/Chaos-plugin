@@ -24,7 +24,7 @@ public class main extends Plugin {
 		handler.<Player>register("chaos", "Started chaos", (args, player) -> {
 			UnitType flare = Vars.content.units().find(b -> b.name.equals("flare"));
 			if (score < 10){
-				flare.spawn(Team.crux, player.x * 3 - player.x, player.y * 3 - player.y);
+				flare.spawn(Team.crux, player.x * 1.5 - player.x, player.y * 1.5 - player.y);
 				score++;
 			}
 			score = 0;
