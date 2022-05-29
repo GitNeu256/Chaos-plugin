@@ -26,7 +26,7 @@ public class main extends Plugin {
 			for (int i = 0; i < 10; i++) {
 				tx, ty = Math.random() * Vars.world.width(), Math.random() * Vars.world.height();
 				flare.spawn(Team.crux, player.x * 2, player.y * 2);
-				toxopid.spwan(Team.crux, tx, ty)
+				toxopid.spwan(Team.crux, tx, ty);
 			}
 		});
 	}
