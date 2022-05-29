@@ -18,7 +18,7 @@ import java.util.*;
 import java.lang.*;
 
 public class main extends Plugin {
-	public int fx, fy, tx, ty;
+	public int fx, fy, tx, ty, cx, cy, zx, zy, ax, ay;
 
 	@Override
 	public void registerClientCommands(CommandHandler handler) {
